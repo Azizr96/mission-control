@@ -8,7 +8,7 @@
 - [x] Initial commit with base file structure (`index.html`, `css/`, `js/`, `documentation/`)
 - [x] Scaffold semantic HTML structure (header, nav, main sections, footer)
 - [x] Set up external CSS file with base styling and layout
-- [ ] Setup bootstrap main skeleton code for all fines and link them
+- [ ] Set up Bootstrap main skeleton code for all files and link them
 - [ ] Create README template on ('https://markdown.2bn.dev/')
 - [ ] Add readme file and readme template
 - [ ] Add wireframes to REDME file and snapshots to ('documentation/images')
