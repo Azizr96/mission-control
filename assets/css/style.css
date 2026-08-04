@@ -1,0 +1,10 @@
+:root,
+[data-bs-theme="dark"] {
+  /* Surfaces */
+  --color-bg: #0A0712;            /* page background */
+  --color-bg-card: #15101F;       /* panels */
+  --color-bg-card-raised: #1E1730;/* mission list items, inputs */
+  --color-border: #2A2140;
+
+  
+}
