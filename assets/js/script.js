@@ -33,6 +33,12 @@ ringProgress.style.strokeDasharray = `${ring_circumference}`;
 
 const mode_labels = { pomodoro: "Mission", short: "Short Break", long: "Long Break" };
 
+/*  Load saved settings  */
+const savedDurations = loadJSON("durations", { pomodoro: 25, short: 5, long: 15 });
+document.getElementById("duration-pomodoro").value = savedDurations.pomodoro;
+document.getElementById("duration-short").value = savedDurations.short;
+document.getElementById("duration-long").value = savedDurations.long;
+
 /*  Timer setup  */
 const timer = new PomodoroTimer(savedDurations, {
   onTick: updateTimerDisplay,
