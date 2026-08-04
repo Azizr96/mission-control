@@ -43,9 +43,6 @@
     
     <main class="row g-4">
 
-
-
-
          <!--  TIMER PANEL — Sarah (Timer core: US-1–5)  -->
       <div class="col-12 col-lg-6">
         <section class="panel card bg-body-tertiary border-0 rounded-4 p-4 p-md-5 h-100 d-flex flex-column align-items-center text-center" aria-labelledby="timer-heading">
@@ -78,7 +75,18 @@
             <button type="button" class="btn btn-outline-light" id="btn-stop">Stop</button>
           </div>
   
-  
+        <!--  Duration settings — Rauhan (Persistence + Settings: US-6, US-12, US-13)  -->
+          <details class="settings w-100">
+            <summary class="text-subtle">Mission durations</summary>
+            <form class="settings__form row g-2 mt-2 justify-content-center" id="settings-form">
+              
+            </form>
+          </details>
+          <!--  end Settings — you  -->
+ 
+          <p class="timer-announcer visually-hidden" id="timer-announcer" aria-live="assertive"></p>
+        </section>
+      </div>
   
   
   
