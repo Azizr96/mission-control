@@ -229,8 +229,21 @@ let audioContext = null;
 function playNotificationSound() {
 
   try{
+    audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
 
+    oscillator.type = "sine";
+    oscillator.frequency.value = 660;
+    gain.gain.setValueAtTime(0.15, audioContext.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.6);
+
+    oscillator.connect(gain).connect(audioContext.destination);
+    oscillator.start();
+    oscillator.stop(audioContext.currentTime + 0.6);
   } catch(err){
-    
+    // Web Audio isn't available/allowed — fail silently, the visual
+    // announcement (timerAnnouncer) still communicates session end.
+    console.warn("Notification sound unavailable.", err);
   }
 }
