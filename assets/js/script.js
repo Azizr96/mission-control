@@ -57,7 +57,24 @@ function updateTimerDisplay(remainingSeconds, totalSeconds, mode) {
     sessionCounterEl.textContent = mode_labels[mode];
   }
 }
+function updateActiveTab(mode) {
+  tabButtons.forEach((btn) => {
+    const isActive = btn.dataset.mode === mode;
+    btn.classList.toggle("is-active", isActive);
+    btn.setAttribute("aria-selected", isActive ? "true" : "false");
+  });
+  btnPause.disabled = true;
+  btnPause.textContent = "Pause";
+  btnStart.disabled = false;
+}
 
+function handleSessionComplete(finishedMode) {
+  playNotificationSound();
+  timerAnnouncer.textContent = `${mode_labels[finishedMode] || finishedMode} session complete.`;
+  if (finishedMode === "pomodoro") {
+    incrementDailySessionCount();
+  }
+}
 
 
 /*  Missions (task list)  */
