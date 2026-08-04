@@ -95,3 +95,17 @@ function renderMissions() {
   statIncompleteEl.textContent = missions.countIncomplete();
 }
 
+/*  Daily focus-session counter  */
+function todayKey() {
+  return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+}
+
+function incrementDailySessionCount() {
+  const record = loadJSON("dailySessions", { date: todayKey(), count: 0 });
+  if (record.date !== todayKey()) {
+    record.date = todayKey();
+    record.count = 0;
+  }
+  record.count += 1;
+  saveJSON("dailySessions", record);
+}
