@@ -1,3 +1,4 @@
+/*  Variables and Theme declarations */
 :root,
 [data-bs-theme="dark"] {
   /* Surfaces */
@@ -35,4 +36,148 @@
   --bs-danger-rgb: 255, 90, 68;
 
   --bs-link-color: var(--color-accent);
+
 }
+
+/*  1a. Buttons —  Customisations and styling */
+
+/*  1b. Buttons — Timer core: Start/Pause  */
+
+.btn-primary {
+  --bs-btn-color: #FFFFFF;
+  --bs-btn-bg: var(--color-accent-button);
+  --bs-btn-border-color: var(--color-accent-button);
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-bg: var(--color-accent-button-hover);
+  --bs-btn-hover-border-color: var(--color-accent-button-hover);
+  --bs-btn-active-color: #FFFFFF;
+  --bs-btn-active-bg: var(--color-accent-button-hover);
+  --bs-btn-active-border-color: var(--color-accent-button-hover);
+  --bs-btn-disabled-color: #FFFFFF;
+  --bs-btn-disabled-bg: var(--color-accent-button);
+  --bs-btn-disabled-border-color: var(--color-accent-button);
+  --bs-btn-focus-shadow-rgb: 201, 58, 42;
+}
+
+
+.btn-secondary {
+  --bs-btn-color: var(--color-text-primary);
+  --bs-btn-bg: var(--color-bg-card-raised);
+  --bs-btn-border-color: var(--color-border);
+  --bs-btn-hover-color: var(--color-text-primary);
+  --bs-btn-hover-bg: #291F42;
+  --bs-btn-hover-border-color: var(--color-border);
+  --bs-btn-active-color: var(--color-text-primary);
+  --bs-btn-active-bg: #291F42;
+  --bs-btn-active-border-color: var(--color-border);
+  --bs-btn-disabled-color: var(--color-text-secondary);
+  --bs-btn-disabled-bg: var(--color-bg-card-raised);
+  --bs-btn-disabled-border-color: var(--color-border);
+}
+
+/*  1c. Buttons — Task List: "Set current"  */
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--color-text-secondary);
+  --bs-btn-border-color: var(--color-border);
+  --bs-btn-hover-color: var(--color-bg);
+  --bs-btn-hover-bg: var(--color-text-secondary);
+  --bs-btn-hover-border-color: var(--color-text-secondary);
+  --bs-btn-active-color: var(--color-bg);
+  --bs-btn-active-bg: var(--color-text-secondary);
+  --bs-btn-active-border-color: var(--color-text-secondary);
+}
+
+/*  1d. Accessibility  — Davy  */
+/* General Body style and typography */
+.text-subtle { color: var(--color-text-secondary) !important; }
+
+body { font-family: var(--font-body); }
+h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/*  2. Shell — Davy (general layout/responsive polish)  */
+.app-shell { max-width: 1100px; }
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.app-title__icon { color: var(--color-accent); display: inline-flex; }
+
+.panel { box-shadow: none; } /* flat, clean surfaces instead of drop shadows */
+
+/*  3. Mode tabs — Sarah (Timer core)  */
+.mode-tabs {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 5px;
+  border-radius: 999px;
+  gap: 4px;
+}
+.mode-tab {
+  color: var(--color-text-secondary);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+}
+.mode-tab.is-active {
+  background-color: var(--color-accent-button);
+  color: #FFFFFF;
+  border-radius: 50px;
+}
+
+/*  4. Timer ring — Sarah (Timer core)  */
+.timer-ring-wrap { position: relative; width: 220px; height: 220px; margin-inline: auto; }
+.timer-ring { transform: rotate(-90deg); }
+.timer-ring__track {
+  fill: none;
+  stroke: var(--color-bg-card-raised);
+  stroke-width: 8;
+}
+.timer-ring__progress {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.25s linear;
+}
+.timer-display {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary);
+}
+
+
+
+/*  8. Instructions link + modal  (accessibility/usability)  */
+.instructions-link {
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+.instructions-link:hover,
+.instructions-link:focus-visible { color: var(--color-accent-button-hover); }
+
+.modal-content {
+  background-color: var(--color-bg-card);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+.modal-header, .modal-footer { border-color: var(--color-border); }
+.modal-body ol { color: var(--color-text-primary); }
+.modal-body li { margin-bottom: 0.4rem; }
