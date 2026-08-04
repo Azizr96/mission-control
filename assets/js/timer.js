@@ -31,8 +31,16 @@ export class PomodoroTimer {
   }
 
   /** Switch mode, stop any running countdown, and reset the display to that mode's duration. */
+  setMode(mode) {
+    if (!this.durations[mode]) return;
+    this._stopInterval();
+    this.isRunning = false;
+    this.mode = mode;
+    this.remainingSeconds = this.totalSecondsForMode;
+    this.onModeChange(this.mode);
+    this._emitTick();
+  }
 
-  
 
     _emitTick() {
     this.onTick(this.remainingSeconds, this.totalSecondsForMode, this.mode);
