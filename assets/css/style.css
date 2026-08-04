@@ -101,6 +101,18 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   outline-offset: 2px;
 }
 
+/*  2. Shell — Davy (general layout/responsive polish)  */
+.app-shell { max-width: 1100px; }
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.app-title__icon { color: var(--color-accent); display: inline-flex; }
+
+.panel { box-shadow: none; } /* flat, clean surfaces instead of drop shadows */
+
+
 /*  8. Instructions link + modal — Davy (accessibility/usability)  */
 .instructions-link {
   color: var(--color-accent);
