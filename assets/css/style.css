@@ -10,5 +10,17 @@
   --color-text-primary: #F5F3FA;
   --color-text-secondary: #A79FC2;
 
-  
+  /* Accent (tomato)  */
+  --color-accent: #FF5A44;
+  /* Button fill — white  */
+  --color-accent-button: #C93A2A;
+  --color-accent-button-hover: #DB4530;
+
+  --color-success: #34D399;       
+  --color-danger: #FF5A44;        
+
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+ 
 }
