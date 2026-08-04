@@ -101,6 +101,20 @@ tabButtons.forEach((btn) => {
   });
 });
 
+/*  Settings form (custom durations)  */
+settingsForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(settingsForm);
+  const next = {
+    pomodoro: Number(formData.get("pomodoro")),
+    short: Number(formData.get("short")),
+    long: Number(formData.get("long")),
+  };
+
+ 
+});
+
+
 /*  Missions (task list)  */
 const missions = new MissionList();
 renderMissions();
