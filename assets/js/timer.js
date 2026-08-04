@@ -20,4 +20,15 @@ export class PomodoroTimer {
     this.onModeChange = callbacks.onModeChange || (() => {});
     this.onComplete = callbacks.onComplete || (() => {});
   }
+
+  get totalSecondsForMode() {
+    return this.durations[this.mode] * 60;
+  }
+
+/** Update the stored durations (e.g. from the settings form). Does not affect a running session. */
+  setDurations(durationsInMinutes) {
+    this.durations = { ...durationsInMinutes };
+  }
+
+  
 }
