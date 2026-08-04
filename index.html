@@ -79,7 +79,22 @@
           <details class="settings w-100">
             <summary class="text-subtle">Mission durations</summary>
             <form class="settings__form row g-2 mt-2 justify-content-center" id="settings-form">
-              
+              <div class="col-auto">
+                <label for="duration-pomodoro" class="form-label small text-subtle mb-1">Pomodoro (min)</label>
+                <input type="number" class="form-control form-control-sm" id="duration-pomodoro" name="pomodoro" min="1" max="90" step="1" value="25" inputmode="numeric">
+              </div>
+              <div class="col-auto">
+                <label for="duration-short" class="form-label small text-subtle mb-1">Short Break (min)</label>
+                <input type="number" class="form-control form-control-sm" id="duration-short" name="short" min="1" max="30" step="1" value="5" inputmode="numeric">
+              </div>
+              <div class="col-auto">
+                <label for="duration-long" class="form-label small text-subtle mb-1">Long Break (min)</label>
+                <input type="number" class="form-control form-control-sm" id="duration-long" name="long" min="1" max="60" step="1" value="15" inputmode="numeric">
+              </div>
+              <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-outline-light btn-sm">Save durations</button>
+                <p class="settings__error text-danger small mt-2 mb-0" id="settings-error" role="alert"></p>
+              </div>
             </form>
           </details>
           <!--  end Settings — you  -->
