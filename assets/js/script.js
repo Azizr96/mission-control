@@ -89,7 +89,17 @@ btnPause.addEventListener("click", () => {
   btnPause.disabled = true;
 });
 
+btnStop.addEventListener("click", () => {
+  timer.stop();
+  btnStart.disabled = false;
+  btnPause.disabled = true;
+});
 
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    timer.setMode(btn.dataset.mode);
+  });
+});
 
 /*  Missions (task list)  */
 const missions = new MissionList();
