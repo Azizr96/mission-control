@@ -25,6 +25,16 @@ const missionListEl = document.getElementById("mission-list");
 const statDoneEl = document.getElementById("stat-done");
 const statIncompleteEl = document.getElementById("stat-incomplete");
 
+
+/*  Ring geometry (matches r="98" in index.html)  */
+const ring_radius = 98;
+const ring_circumference = 2 * Math.PI * ring_radius;
+ringProgress.style.strokeDasharray = `${ring_circumference}`;
+
+const mode_labels = { pomodoro: "Mission", short: "Short Break", long: "Long Break" };
+
+
+
 /*  Missions (task list)  */
 const missions = new MissionList();
 renderMissions();
