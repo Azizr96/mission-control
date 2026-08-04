@@ -39,6 +39,54 @@
 
 }
 
+/*  1a. Buttons —  Customisations and styling */
+
+/*  1b. Buttons — Timer core: Start/Pause  */
+
+.btn-primary {
+  --bs-btn-color: #FFFFFF;
+  --bs-btn-bg: var(--color-accent-button);
+  --bs-btn-border-color: var(--color-accent-button);
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-bg: var(--color-accent-button-hover);
+  --bs-btn-hover-border-color: var(--color-accent-button-hover);
+  --bs-btn-active-color: #FFFFFF;
+  --bs-btn-active-bg: var(--color-accent-button-hover);
+  --bs-btn-active-border-color: var(--color-accent-button-hover);
+  --bs-btn-disabled-color: #FFFFFF;
+  --bs-btn-disabled-bg: var(--color-accent-button);
+  --bs-btn-disabled-border-color: var(--color-accent-button);
+  --bs-btn-focus-shadow-rgb: 201, 58, 42;
+}
+
+
+.btn-secondary {
+  --bs-btn-color: var(--color-text-primary);
+  --bs-btn-bg: var(--color-bg-card-raised);
+  --bs-btn-border-color: var(--color-border);
+  --bs-btn-hover-color: var(--color-text-primary);
+  --bs-btn-hover-bg: #291F42;
+  --bs-btn-hover-border-color: var(--color-border);
+  --bs-btn-active-color: var(--color-text-primary);
+  --bs-btn-active-bg: #291F42;
+  --bs-btn-active-border-color: var(--color-border);
+  --bs-btn-disabled-color: var(--color-text-secondary);
+  --bs-btn-disabled-bg: var(--color-bg-card-raised);
+  --bs-btn-disabled-border-color: var(--color-border);
+}
+
+/*  1c. Buttons — Task List: "Set current"  */
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--color-text-secondary);
+  --bs-btn-border-color: var(--color-border);
+  --bs-btn-hover-color: var(--color-bg);
+  --bs-btn-hover-bg: var(--color-text-secondary);
+  --bs-btn-hover-border-color: var(--color-text-secondary);
+  --bs-btn-active-color: var(--color-bg);
+  --bs-btn-active-bg: var(--color-text-secondary);
+  --bs-btn-active-border-color: var(--color-text-secondary);
+}
 
 /*  8. Instructions link + modal — Davy (accessibility/usability)  */
 .instructions-link {
