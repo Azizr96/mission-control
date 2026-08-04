@@ -1,0 +1,26 @@
+/*  Variables and Theme declarations */
+:root,
+[data-bs-theme="dark"] {
+  /* Surfaces */
+  --color-bg: #0A0712;            /* page background */
+  --color-bg-card: #15101F;       /* panels */
+  --color-bg-card-raised: #1E1730;/* mission list items, inputs */
+  --color-border: #2A2140;
+
+  /* Text  */
+  --color-text-primary: #F5F3FA;
+  --color-text-secondary: #A79FC2;
+
+  /* Accent (tomato)  */
+  --color-accent: #FF5A44;
+  /* Button fill — white  */
+  --color-accent-button: #C93A2A;
+  --color-accent-button-hover: #DB4530;
+
+  --color-success: #34D399;       
+  --color-danger: #FF5A44;        
+
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+}
