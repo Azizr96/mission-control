@@ -76,6 +76,14 @@ function handleSessionComplete(finishedMode) {
   }
 }
 
+/*  Timer controls  */
+btnStart.addEventListener("click", () => {
+  timer.start();
+  btnStart.disabled = true;
+  btnPause.disabled = false;
+});
+
+
 
 /*  Missions (task list)  */
 const missions = new MissionList();
