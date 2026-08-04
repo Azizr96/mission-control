@@ -135,6 +135,33 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   border-radius: 50px;
 }
 
+/*  4. Timer ring — Sarah (Timer core)  */
+.timer-ring-wrap { position: relative; width: 220px; height: 220px; margin-inline: auto; }
+.timer-ring { transform: rotate(-90deg); }
+.timer-ring__track {
+  fill: none;
+  stroke: var(--color-bg-card-raised);
+  stroke-width: 8;
+}
+.timer-ring__progress {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.25s linear;
+}
+.timer-display {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-primary);
+}
+
 /*  8. Instructions link + modal — Davy (accessibility/usability)  */
 .instructions-link {
   color: var(--color-accent);
