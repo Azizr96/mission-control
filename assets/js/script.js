@@ -222,3 +222,15 @@ function incrementDailySessionCount() {
   record.count += 1;
   saveJSON("dailySessions", record);
 }
+
+/*  Notification sound (no external audio file needed)  */
+let audioContext = null;
+
+function playNotificationSound() {
+
+  try{
+
+  } catch(err){
+    
+  }
+}
