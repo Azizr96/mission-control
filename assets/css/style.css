@@ -112,6 +112,28 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 
 .panel { box-shadow: none; } /* flat, clean surfaces instead of drop shadows */
 
+/*  3. Mode tabs — Sarah (Timer core)  */
+.mode-tabs {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 5px;
+  border-radius: 999px;
+  gap: 4px;
+}
+.mode-tab {
+  color: var(--color-text-secondary);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+}
+.mode-tab.is-active {
+  background-color: var(--color-accent-button);
+  color: #FFFFFF;
+  border-radius: 50px;
+}
 
 /*  8. Instructions link + modal — Davy (accessibility/usability)  */
 .instructions-link {
