@@ -33,7 +33,11 @@
         </span>
         Mission Control
       </h1>
-
+      <div>
+        <button type="button" class="btn btn-link instructions-link p-0" data-bs-toggle="modal" data-bs-target="#instructionsModal">
+          How it works
+        </button>
+      </div>
     </header>
 <main>
   
@@ -44,6 +48,33 @@
     <footer class="text-center text-subtle small mt-5">
       <p>&copy;Copyright 2026 - Mission Control </p>
     </footer>
+
+ <!--  INSTRUCTIONS MODAL —  (accessibility/usability)  -->
+  <div class="modal fade" id="instructionsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="dialog" aria-modal="true" aria-labelledby="instructionsModalLabel">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="instructionsModalLabel">Mission Briefing</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Here's how a focus session works:</p>
+          <ol class="mb-3">
+            <li>Add your missions to the list, and mark one as <strong>current</strong>.</li>
+            <li>Press <strong>Start</strong> to begin a 25-minute Pomodoro focus session.</li>
+            <li>When it ends, take a 5-minute <strong>Short Break</strong>.</li>
+            <li>After 4 Pomodoros, you'll get a longer 15-minute <strong>Long Break</strong>.</li>
+            <li>Check missions off as you complete them — your daily stats update automatically.</li>
+          </ol>
+          <p class="text-subtle small mb-0">Durations are adjustable any time under "Mission durations," and everything is saved automatically so you won't lose your progress on refresh.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
