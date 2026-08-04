@@ -117,7 +117,24 @@ settingsForm.addEventListener("submit", (event) => {
     long: Number(formData.get("long")),
   };
 
- 
+ const isValid = Object.values(next).every(
+    (value) => Number.isInteger(value) && value > 0 && value <= 90
+  );
+
+  if (!isValid) {
+    settingsError.textContent = "Durations must be whole numbers between 1 and 90 minutes.";
+    return;
+  }
+
+  settingsError.textContent = "";
+  timer.setDurations(next);
+  saveJSON("durations", next);
+
+  // Only refresh the on-screen countdown if the timer isn't mid-session.
+  if (!timer.isRunning) {
+    timer.remainingSeconds = timer.totalSecondsForMode;
+    updateTimerDisplay(timer.remainingSeconds, timer.totalSecondsForMode, timer.mode);
+  }
 });
 
 
