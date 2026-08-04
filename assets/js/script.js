@@ -33,6 +33,31 @@ ringProgress.style.strokeDasharray = `${ring_circumference}`;
 
 const mode_labels = { pomodoro: "Mission", short: "Short Break", long: "Long Break" };
 
+/*  Timer setup  */
+const timer = new PomodoroTimer(savedDurations, {
+  onTick: updateTimerDisplay,
+  onModeChange: updateActiveTab,
+  onComplete: handleSessionComplete,
+});
+
+updateTimerDisplay(timer.remainingSeconds, timer.totalSecondsForMode, timer.mode);
+
+function updateTimerDisplay(remainingSeconds, totalSeconds, mode) {
+  const minutes = Math.floor(remainingSeconds / 60).toString().padStart(2, "0");
+  const seconds = (remainingSeconds % 60).toString().padStart(2, "0");
+  timerDisplay.textContent = `${minutes}:${seconds}`;
+
+  const progressFraction = totalSeconds > 0 ? remainingSeconds / totalSeconds : 0;
+  ringProgress.style.strokeDashoffset = `${ring_circumference * (1 - progressFraction)}`;
+
+  if (mode === "pomodoro") {
+    const cycleInBlock = (timer.completedPomodoros % 4) + 1;
+    sessionCounterEl.textContent = `Mission ${cycleInBlock} of 4`;
+  } else {
+    sessionCounterEl.textContent = mode_labels[mode];
+  }
+}
+
 
 
 /*  Missions (task list)  */
