@@ -83,6 +83,12 @@ btnStart.addEventListener("click", () => {
   btnPause.disabled = false;
 });
 
+btnPause.addEventListener("click", () => {
+  timer.pause();
+  btnStart.disabled = false;
+  btnPause.disabled = true;
+});
+
 
 
 /*  Missions (task list)  */
