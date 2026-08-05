@@ -196,3 +196,18 @@ The site is deployed to GitHub Pages:
 - Under **Build and deployment**, set the **Branch** to `main`, then **Save**.
 - Allow a few minutes for the deployment to complete.
 The live link is on [GitHub Pages](https://azizr96.github.io/mission-control).
+
+### Local Development
+ 
+This project uses native ES modules (`<script type="module">`), which browsers block from a plain `file://` page due to CORS. Serve the folder with a local dev server instead:
+ 
+1. Clone the repository: `git clone https://www.github.com/Azizr96/mission-control.git`
+2. Open the folder in VS Code and run it with the **Live Server** extension, or:
+```bash
+   python3 -m http.server 8000
+```
+3. Open `http://localhost:8000` in your browser.
+
+### Local vs. Deployment
+ 
+There are no known functional differences between the local version and the deployed version.
