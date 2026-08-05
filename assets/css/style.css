@@ -2,23 +2,23 @@
 :root,
 [data-bs-theme="dark"] {
   /* Surfaces */
-  --color-bg: #0A0712;            /* page background */
-  --color-bg-card: #15101F;       /* panels */
-  --color-bg-card-raised: #1E1730;/* mission list items, inputs */
-  --color-border: #2A2140;
+  --color-bg: #0a0712; /* page background */
+  --color-bg-card: #15101f; /* panels */
+  --color-bg-card-raised: #1e1730; /* mission list items, inputs */
+  --color-border: #2a2140;
 
   /* Text  */
-  --color-text-primary: #F5F3FA;
-  --color-text-secondary: #A79FC2;
+  --color-text-primary: #f5f3fa;
+  --color-text-secondary: #a79fc2;
 
   /* Accent (tomato)  */
-  --color-accent: #FF5A44;
+  --color-accent: #ff5a44;
   /* Button fill — white  */
-  --color-accent-button: #C93A2A;
-  --color-accent-button-hover: #DB4530;
+  --color-accent-button: #c93a2a;
+  --color-accent-button-hover: #db4530;
 
-  --color-success: #34D399;       
-  --color-danger: #FF5A44;        
+  --color-success: #34d399;
+  --color-danger: #ff5a44;
 
   --font-display: "Sora", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -29,14 +29,13 @@
   --bs-secondary-color: var(--color-text-secondary);
   --bs-border-color: var(--color-border);
   --bs-tertiary-bg: var(--color-bg-card);
-  --bs-tertiary-bg-rgb: 21, 16, 31;  
+  --bs-tertiary-bg-rgb: 21, 16, 31;
   --bs-card-bg: var(--color-bg-card);
 
   --bs-danger: var(--color-danger);
   --bs-danger-rgb: 255, 90, 68;
 
   --bs-link-color: var(--color-accent);
-
 }
 
 /*  1a. Buttons —  Customisations and styling */
@@ -44,31 +43,30 @@
 /*  1b. Buttons — Timer core: Start/Pause  */
 
 .btn-primary {
-  --bs-btn-color: #FFFFFF;
+  --bs-btn-color: #ffffff;
   --bs-btn-bg: var(--color-accent-button);
   --bs-btn-border-color: var(--color-accent-button);
-  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-bg: var(--color-accent-button-hover);
   --bs-btn-hover-border-color: var(--color-accent-button-hover);
-  --bs-btn-active-color: #FFFFFF;
+  --bs-btn-active-color: #ffffff;
   --bs-btn-active-bg: var(--color-accent-button-hover);
   --bs-btn-active-border-color: var(--color-accent-button-hover);
-  --bs-btn-disabled-color: #FFFFFF;
+  --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: var(--color-accent-button);
   --bs-btn-disabled-border-color: var(--color-accent-button);
   --bs-btn-focus-shadow-rgb: 201, 58, 42;
 }
-
 
 .btn-secondary {
   --bs-btn-color: var(--color-text-primary);
   --bs-btn-bg: var(--color-bg-card-raised);
   --bs-btn-border-color: var(--color-border);
   --bs-btn-hover-color: var(--color-text-primary);
-  --bs-btn-hover-bg: #291F42;
+  --bs-btn-hover-bg: #291f42;
   --bs-btn-hover-border-color: var(--color-border);
   --bs-btn-active-color: var(--color-text-primary);
-  --bs-btn-active-bg: #291F42;
+  --bs-btn-active-bg: #291f42;
   --bs-btn-active-border-color: var(--color-border);
   --bs-btn-disabled-color: var(--color-text-secondary);
   --bs-btn-disabled-bg: var(--color-bg-card-raised);
@@ -90,10 +88,19 @@
 
 /*  1d. Accessibility  — Davy  */
 /* General Body style and typography */
-.text-subtle { color: var(--color-text-secondary) !important; }
+.text-subtle {
+  color: var(--color-text-secondary) !important;
+}
 
-body { font-family: var(--font-body); }
-h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
+body {
+  font-family: var(--font-body);
+}
+h1,
+h2,
+.stat-card__value,
+.timer-display {
+  font-family: var(--font-display);
+}
 
 /* Visible keyboard focus everywhere */
 :focus-visible {
@@ -102,15 +109,22 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 }
 
 /*  2. Shell — Davy (general layout/responsive polish)  */
-.app-shell { max-width: 1100px; }
+.app-shell {
+  max-width: 1100px;
+}
 .app-title {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
-.app-title__icon { color: var(--color-accent); display: inline-flex; }
+.app-title__icon {
+  color: var(--color-accent);
+  display: inline-flex;
+}
 
-.panel { box-shadow: none; } /* flat, clean surfaces instead of drop shadows */
+.panel {
+  box-shadow: none;
+} /* flat, clean surfaces instead of drop shadows */
 
 /*  3. Mode tabs — Sarah (Timer core)  */
 .mode-tabs {
@@ -141,14 +155,21 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 }
 .mode-tab.is-active {
   background-color: var(--color-accent-button);
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50px;
 }
 
 
 /*  4. Timer ring — Sarah (Timer core)  */
-.timer-ring-wrap { position: relative; width: 220px; height: 220px; margin-inline: auto; }
-.timer-ring { transform: rotate(-90deg); }
+.timer-ring-wrap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin-inline: auto;
+}
+.timer-ring {
+  transform: rotate(-90deg);
+}
 .timer-ring__track {
   fill: none;
   stroke: var(--color-bg-card-raised);
@@ -173,11 +194,18 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   color: var(--color-text-primary);
 }
 
-
 /*  5. Settings (mission durations) — you (Persistence + Settings)  */
-.settings { max-width: 360px; }
-.settings summary { cursor: pointer; font-size: 0.85rem; color: var(--color-text-secondary); }
-.settings summary::marker { color: var(--color-text-secondary); }
+.settings {
+  max-width: 360px;
+}
+.settings summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+.settings summary::marker {
+  color: var(--color-text-secondary);
+}
 .settings input.form-control {
   background-color: var(--color-bg);
   border-color: var(--color-border);
@@ -190,7 +218,9 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   border-color: var(--color-border);
   color: var(--color-text-primary);
 }
-.mission-form input.form-control::placeholder { color: var(--color-text-secondary); }
+.mission-form input.form-control::placeholder {
+  color: var(--color-text-secondary);
+}
 
 .mission-list .list-group-item {
   background-color: transparent;
@@ -204,10 +234,12 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   max-height: 21rem;
   overflow-y: auto;
   padding-right: 0.5rem;
-  scrollbar-width: thin;                                   /* Firefox */
+  scrollbar-width: thin; /* Firefox */
   scrollbar-color: var(--color-accent-button) var(--color-bg-card-raised);
 }
-.mission-list::-webkit-scrollbar { width: 8px; }            /* Chrome/Safari/Edge */
+.mission-list::-webkit-scrollbar {
+  width: 8px;
+} /* Chrome/Safari/Edge */
 .mission-list::-webkit-scrollbar-track {
   background-color: var(--color-bg-card-raised);
   border-radius: 999px;
@@ -225,12 +257,19 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   outline: 2px solid var(--color-accent);
   outline-offset: -1px;
 }
-.mission-item__label { flex: 1; cursor: pointer; }
+.mission-item__label {
+  flex: 1;
+  cursor: pointer;
+}
 .mission-item.is-complete .mission-item__label {
   text-decoration: line-through;
   color: var(--color-text-secondary);
 }
-.mission-item__checkbox { accent-color: var(--color-success); width: 18px; height: 18px; }
+.mission-item__checkbox {
+  accent-color: var(--color-success);
+  width: 18px;
+  height: 18px;
+}
 .mission-item__current-btn {
   --bs-btn-padding-y: 0.15rem;
   --bs-btn-padding-x: 0.6rem;
@@ -250,7 +289,9 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   color: var(--color-accent);
 }
 
-.stat-card { border: 1px solid var(--color-border); }
+.stat-card {
+  border: 1px solid var(--color-border);
+}
 
 /*  8. Instructions link + modal  (accessibility/usability)  */
 .instructions-link {
@@ -259,16 +300,38 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   text-decoration: underline;
 }
 .instructions-link:hover,
-.instructions-link:focus-visible { color: var(--color-accent-button-hover); }
+.instructions-link:focus-visible {
+  color: var(--color-accent-button-hover);
+}
 
 .modal-content {
   background-color: var(--color-bg-card);
   color: var(--color-text-primary);
   border: 1px solid var(--color-border);
 }
-.modal-header, .modal-footer { border-color: var(--color-border); }
-.modal-body ol { color: var(--color-text-primary); }
-.modal-body li { margin-bottom: 0.4rem; }
+.modal-header,
+.modal-footer {
+  border-color: var(--color-border);
+}
+.modal-body ol {
+  color: var(--color-text-primary);
+}
+.modal-body li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 450px) {
+  .mode-tabs {
+    justify-content: flex-start;
+    padding: 4px;
+    gap: 3px;
+  }
+
+  .mode-tab {
+    font-size: 0.75rem;
+    padding: 7px 10px;
+  }
+}
 
 
 @media (max-width: 450px) {
@@ -287,7 +350,9 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
