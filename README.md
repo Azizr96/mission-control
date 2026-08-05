@@ -103,3 +103,25 @@ Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https:
  
  ![screenshot](documentation/screenshots/wireframes.png) 
  
+## User Stories
+ 
+| Target | Expectation | Outcome |
+| --- | --- | --- |
+| As a user | I want to start a focus timer | so that I can begin a work session. |
+| As a user | I want to pause and resume the timer | so that I can handle interruptions without losing progress. |
+| As a user | I want to reset the current session | so that I can start over if I get distracted. |
+| As a user | I want to switch between Focus, Short Break, and Long Break | so that I can follow the Pomodoro structure. |
+| As a user | I want the timer to automatically move to the next session type | so that I don't have to manually switch every time. |
+| As a user | I want to set my own durations for focus and break sessions | so that I can tailor the timer to my own workflow. |
+| As a user | I want a sound or visual alert when a session ends | so that I notice even if I'm not looking at the screen. |
+| As a user | I want to add a task to my list | so that I can track what I'm working on. |
+| As a user | I want to check off a task when it's done | so that I can see my progress. |
+| As a user | I want to remove a task from my list | so that I can clean up items I no longer need. |
+| As a user | I want to mark which task I'm actively working on | so that it's clear what my current focus session is for. |
+| As a user | I want my task list to still be there if I refresh the page | so that I don't lose my list. |
+| As a user | I want my custom durations to be remembered | so that I don't have to reset them every visit. |
+| As a user | I want to see how many focus sessions I've completed today | so that I feel a sense of progress. |
+| As a user relying on assistive technology | I want the page to use semantic HTML and pass accessibility checks | so that I can navigate and use the app regardless of ability. |
+| As a user on any device | I want the layout to adapt to my screen size | so that the app is usable on mobile, tablet, and desktop. |
+| As a user | I want to access the app online | so that I don't need to run it locally. |
+
