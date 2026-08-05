@@ -119,7 +119,15 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   padding: 5px;
   border-radius: 999px;
   gap: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
 }
+.mode-tabs::-webkit-scrollbar { display: none; }
 .mode-tab {
   color: var(--color-text-secondary);
   border-radius: 999px;
@@ -128,12 +136,15 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   padding: 8px 16px;
   border: none;
   background: transparent;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 .mode-tab.is-active {
   background-color: var(--color-accent-button);
   color: #FFFFFF;
   border-radius: 50px;
 }
+
 
 /*  4. Timer ring — Sarah (Timer core)  */
 .timer-ring-wrap { position: relative; width: 220px; height: 220px; margin-inline: auto; }
@@ -161,13 +172,6 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   font-variant-numeric: tabular-nums;
   color: var(--color-text-primary);
 }
-
-
-
-
-
-
-
 
 
 /*  5. Settings (mission durations) — you (Persistence + Settings)  */
@@ -265,3 +269,17 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 .modal-header, .modal-footer { border-color: var(--color-border); }
 .modal-body ol { color: var(--color-text-primary); }
 .modal-body li { margin-bottom: 0.4rem; }
+
+
+@media (max-width: 450px) {
+  .mode-tabs {
+    justify-content: flex-start;
+    padding: 4px;
+    gap: 3px;
+  }
+
+  .mode-tab {
+    font-size: 0.75rem;
+    padding: 7px 10px;
+  }
+}
