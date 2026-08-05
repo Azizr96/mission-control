@@ -11,7 +11,7 @@ The recommended [HTML W3C Validator](https://validator.w3.org) was used to valid
  
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-|  | [index.html](https://github.com/Azizr96/mission-control/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://azizr96.github.io/mission-control/index.html) | ![screenshot](documentation/) |  |
+|  | [index.html](https://github.com/Azizr96/mission-control/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://azizr96.github.io/mission-control/index.html) | ![screenshot](documentation/testing-screenshots/html-validation.png) | Passed tests with no errors |
  
 ### CSS
  
