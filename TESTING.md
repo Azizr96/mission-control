@@ -62,7 +62,7 @@ The deployed site was tested using the Lighthouse Audit tool in Chrome DevTools,
  
 | Page | Mobile | Desktop |
 | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
+| Home | ![screenshot](documentation/lighthouse/mobile-lighthouse.png) | ![screenshot](documentation/lighthouse/desktop-lighthouse.png) |
  
 
 ## Accesbility test
