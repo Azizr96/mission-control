@@ -27,3 +27,52 @@ We selected this project because effective time management and maintaining focus
  
 source: [mission-control amiresponsive](https://ui.dev/amiresponsive?url=https://azizr96.github.io/mission-control)
  
+## UX
+ 
+### The 5 Planes of UX
+ 
+#### 1. Strategy
+ 
+**Purpose**
+- Give users a simple, focused way to run Pomodoro sessions without leaving the page.
+- Let users track missions (tasks) alongside their focus sessions, so the timer and the work list live in one place.
+- Make the whole experience accessible: keyboard-navigable, screen-reader friendly, and WCAG-contrast-checked by design, not as an afterthought.
+**Primary User Needs**
+- Start, pause, and reset a focus session without confusion about which mode is active.
+- Add, complete, and remove tasks quickly, and mark one as the current focus.
+- Trust that progress (missions, durations) survives a page refresh.
+**Business/Project Goals**
+- Meet the bootcamp's assessment criteria for front-end design, interactivity, validation, deployment, documentation, and AI-tool usage.
+- Demonstrate genuine team collaboration through a clear Git history and divided ownership of features.
+#### 2. Scope
+ 
+**[Features](#features)** (see below)
+ 
+**Content Requirements**
+- Clear mode labels (Pomodoro / Short Break / Long Break) and an always-visible countdown.
+- An accessible mission list: add, complete, delete, and mark-as-current, with empty-input validation.
+- A live, on-screen Mission Stats summary (missions done / incomplete).
+- A short in-app instructions modal for first-time users.
+#### 3. Structure
+ 
+**Information Architecture**
+- Single page, two main panels: the Timer panel and the Missions panel, side by side on desktop and stacked on mobile/tablet.
+- A full-width Mission Stats strip beneath both panels.
+- An instructions modal, reachable from a "How it works" link in the header, for on-demand guidance rather than cluttering the main layout.
+**User Flow**
+1. User lands on the page and (optionally) opens "How it works" for a quick briefing.
+2. User adds one or more missions to the list, optionally marking one as current.
+3. User presses Start to begin a 25-minute Pomodoro session.
+4. On completion, the app automatically switches to a Short Break (or, every 4th cycle, a Long Break).
+5. User checks off missions as they're completed; Mission Stats update live.
+6. Settings (durations) and all missions persist automatically between visits.
+#### 4. Skeleton
+ 
+**[Wireframes](#wireframes)** (see below)
+ 
+#### 5. Surface
+ 
+**Visual Design Elements**
+- **[Colour Scheme](#colour-scheme)** (see below)
+- **[Typography](#typography)** (see below)
+
