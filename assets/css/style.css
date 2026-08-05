@@ -164,6 +164,90 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 
 
 
+
+
+
+
+
+
+/*  5. Settings (mission durations) — you (Persistence + Settings)  */
+.settings { max-width: 360px; }
+.settings summary { cursor: pointer; font-size: 0.85rem; color: var(--color-text-secondary); }
+.settings summary::marker { color: var(--color-text-secondary); }
+.settings input.form-control {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+/*  6. Mission form + list — Amir (Task List CRUD)  */
+.mission-form input.form-control {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+.mission-form input.form-control::placeholder { color: var(--color-text-secondary); }
+
+.mission-list .list-group-item {
+  background-color: transparent;
+  border-color: var(--color-border);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Scroll rather than grow once the list has more than ~5 missions */
+.mission-list {
+  max-height: 21rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;                                   /* Firefox */
+  scrollbar-color: var(--color-accent-button) var(--color-bg-card-raised);
+}
+.mission-list::-webkit-scrollbar { width: 8px; }            /* Chrome/Safari/Edge */
+.mission-list::-webkit-scrollbar-track {
+  background-color: var(--color-bg-card-raised);
+  border-radius: 999px;
+}
+.mission-list::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent-button);
+  border-radius: 999px;
+}
+.mission-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent-button-hover);
+}
+
+.mission-item.is-current {
+  border-radius: 8px;
+  outline: 2px solid var(--color-accent);
+  outline-offset: -1px;
+}
+.mission-item__label { flex: 1; cursor: pointer; }
+.mission-item.is-complete .mission-item__label {
+  text-decoration: line-through;
+  color: var(--color-text-secondary);
+}
+.mission-item__checkbox { accent-color: var(--color-success); width: 18px; height: 18px; }
+.mission-item__current-btn {
+  --bs-btn-padding-y: 0.15rem;
+  --bs-btn-padding-x: 0.6rem;
+  --bs-btn-font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+}
+.mission-item.is-current .mission-item__current-btn {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/*  7. Stat cards — Amir (Task List CRUD: mission counts)  */
+.stat-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.stat-card { border: 1px solid var(--color-border); }
+
 /*  8. Instructions link + modal  (accessibility/usability)  */
 .instructions-link {
   color: var(--color-accent);
