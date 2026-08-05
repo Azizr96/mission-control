@@ -45,8 +45,8 @@ The deployed site was tested at mobile, tablet, and desktop widths using browser
  
 | Page | Mobile | Tablet | Desktop | Notes |
 | --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/) | Works as expected |
-| Instructions modal | ![screenshot](documentation/responsiveness/mobile-modal.png) | ![screenshot](documentation/responsiveness/tablet-modal.png) | ![screenshot](documentation/) | Works as expected |
+| Home | ![screenshot](documentation/responsivness-screenshots/mobile-resp.png) | ![screenshot](documentation/responsivness-screenshots/tablet-resp.png) | ![screenshot](documentation/responsivness-screenshots/desktop-resp.png) | Works as expected |
+| Instructions modal | ![screenshot](documentation/responsivness-screenshots/mobile-ins-resp.png) | ![screenshot](documentation//responsivness-screenshots/tablet-ins-resp.png) | ![screenshot](documentation/responsivness-screenshots/desktop-ins-resp.png) | Works as expected |
  
 ## Browser Compatibility
  
