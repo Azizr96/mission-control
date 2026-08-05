@@ -265,3 +265,10 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 .modal-header, .modal-footer { border-color: var(--color-border); }
 .modal-body ol { color: var(--color-text-primary); }
 .modal-body li { margin-bottom: 0.4rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
