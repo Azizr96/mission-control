@@ -281,5 +281,11 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
   .mode-tab {
     font-size: 0.75rem;
     padding: 7px 10px;
-  }
+
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
