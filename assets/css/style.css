@@ -284,8 +284,12 @@ h1, h2, .stat-card__value, .timer-display { font-family: var(--font-display); }
 
 }
 
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+
+}
