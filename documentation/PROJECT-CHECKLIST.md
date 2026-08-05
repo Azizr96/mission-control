@@ -9,18 +9,18 @@
 - [x] Scaffold semantic HTML structure (header, nav, main sections, footer)
 - [x] Set up external CSS file with base styling and layout
 - [ ] Set up Bootstrap main skeleton code for all files and link them
-- [ ] Create README template on ('https://markdown.2bn.dev/')
-- [ ] Add readme file and readme template
+- [x] Create README template on ('https://markdown.2bn.dev/')
+- [x] Add readme file and readme template
 - [ ] Add wireframes to REDME file and snapshots to ('documentation/images')
 - [ ] Add user stories to README file and short description of the project, it's needs and benefits.
 - [ ] Push Day 1 work, confirm nothing is broken on `main`
 
 ## Day 2 — Implementation
 
-- [ ] Implement timer state machine (focus/break, Start/Pause/Skip/Reset)
-- [ ] Implement session settings with input validation
-- [ ] Implement task list (add/complete/delete) — DOM updated live
-- [ ] Implement session history log and live stats
+- [x] Implement timer state machine (focus/break, Start/Pause/Skip/Reset)
+- [x] Implement session settings with input validation
+- [x] Implement task list (add/complete/delete) — DOM updated live
+- [x] Implement session history log and live stats
 - [ ] Implement optional Web Audio completion cue with visible toggle
 - [ ] Implement accessible status announcements (aria-live, phase changes only)
 - [ ] Manual test: desktop Chrome
