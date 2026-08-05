@@ -34,8 +34,8 @@ The recommended [JSHint Validator](https://jshint.com) was used to validate all 
  
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| js | [app.js](https://github.com/Azizr96/mission-control/blob/main/js/app.js) |  | ![screenshot](documentation/) |  |
-| js | [timer.js](https://github.com/Azizr96/mission-control/blob/main/js/timer.js) |  | ![screenshot](documentation/) |  |
+| js | [script.js](https://github.com/Azizr96/mission-control/blob/main/js/app.js) |  | ![screenshot](documentation/testing-screenshots/script-js-es-lint-test.png) | The bad constructor warning is due to linter not able to   |
+| js | [timer.js](https://github.com/Azizr96/mission-control/blob/main/js/timer.js) |  | ![screenshot](documentation/testing-screenshots/timer-js-es-lint-test.png) | Linter does not support ES9 features therefore this error shows, however this does nto effect the quality of the code.  |
 | js | [tasks.js](https://github.com/Azizr96/mission-control/blob/main/js/tasks.js) |  | ![screenshot](documentation/) |  |
 | js | [storage.js](https://github.com/Azizr96/mission-control/blob/main/js/storage.js) |  | ![screenshot](documentation/) |  |
  
