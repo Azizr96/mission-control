@@ -64,6 +64,17 @@ The deployed site was tested using the Lighthouse Audit tool in Chrome DevTools,
 | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
  
+
+## Accesbility test
+
+The deployed site was tested using the [WAVE](https://wave.webaim.org/) web accesbility tester
+
+| Test | Screenshot |  
+| --- | --- |
+| WAVE | ![screenshot](documentation/testing-screenshots/accessbility-test.png) |
+
+
+
 ## Defensive Programming
  
 Defensive programming was manually tested with the below user acceptance testing:
@@ -125,10 +136,10 @@ Any remaining open issues can be tracked [here](https://www.github.com/Azizr96/m
  
 ### Known Issues
  
-| Issue | Screenshot |
-| --- | --- |
-| Bootstrap's `lg` grid breakpoint switches to the two-column desktop layout at 992px, not exactly 1024px as shown in the original wireframes. This is a deliberate trade-off of using Bootstrap's default grid rather than a custom breakpoint. |  |
-| The project must be served over `http(s)` (e.g. via Live Server or GitHub Pages) rather than opened directly as a local `file://` page, since native ES modules are blocked by CORS from `file://` origins. This is expected browser behavior, not a bug. |  |
+| Issue | 
+| --- | 
+| Bootstrap's `lg` grid breakpoint switches to the two-column desktop layout at 992px, not exactly 1024px as shown in the original wireframes. This is a deliberate trade-off of using Bootstrap's default grid rather than a custom breakpoint. |  
+| The project must be served over `http(s)` (e.g. via Live Server or GitHub Pages) rather than opened directly as a local `file://` page, since native ES modules are blocked by CORS from `file://` origins. This is expected browser behavior, not a bug. |  
  
 > [!IMPORTANT]  
 > There are no remaining bugs that we are aware of, though, even after thorough testing, we cannot rule out the possibility.
