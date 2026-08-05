@@ -184,3 +184,15 @@ User stories were prioritized using MoSCoW and split across the team by feature 
  
 > [!NOTE]  
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+## Deployment
+
+### GitHub Pages
+ 
+The site is deployed to GitHub Pages:
+ 
+- In the [GitHub repository](https://www.github.com/Azizr96/mission-control), go to **Settings**.
+- Click **Pages** in the left-hand menu.
+- Under **Build and deployment**, set the **Branch** to `main`, then **Save**.
+- Allow a few minutes for the deployment to complete.
+The live link is on [GitHub Pages](https://azizr96.github.io/mission-control).
