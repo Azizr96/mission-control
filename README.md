@@ -125,3 +125,27 @@ Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https:
 | As a user on any device | I want the layout to adapt to my screen size | so that the app is usable on mobile, tablet, and desktop. |
 | As a user | I want to access the app online | so that I don't need to run it locally. |
 
+ 
+## Features
+ 
+### Existing Features
+ 
+| Feature | Notes | Screenshot |
+| --- | --- | --- |
+| Mode tabs | Pomodoro / Short Break / Long Break, styled as pill tabs. Switching modes resets the timer to that mode's duration. | ![screenshot](documentation/screenshots/mode-tabs.png) |
+| Timer ring | A circular SVG progress ring drains as the session counts down, alongside a large digital readout. | ![screenshot](documentation/screenshots/timer-ring.png) |
+| Timer controls | Start / Pause / Stop, with correct button states (e.g. Pause disabled until a session is running). | ![screenshot](documentation/screenshots/timer-control.png) |
+| Mission durations | A collapsible settings panel lets users set custom minute values per mode, validated to whole numbers between 1-90. | ![screenshot](documentation/screenshots/settings.png) |
+| Mission list | Add, complete, delete, and mark-as-current, with empty-input validation. The list scrolls internally past ~5 items instead of growing the page indefinitely. | ![screenshot](documentation/screenshots/mission-list.png) |
+| Mission Stats | Live counts of missions done vs. incomplete. | ![screenshot](documentation/screenshots/mission-stats.png) |
+| Instructions modal | A "How it works" link opens a Bootstrap modal briefing first-time users on the focus-session flow. | ![screenshot](documentation/screenshots/instructions-modal.png) |
+| Persistence | Missions and duration settings are saved to `localStorage` and restored automatically on return visits. | ![screenshot](documentation/screenshots/persistence.png) |
+| Accessibility | Semantic HTML, ARIA live regions for timer/task state, full keyboard navigation, and a visible focus ring throughout. | Please see deployed link |
+ 
+### Future Features
+ 
+- **Session history**: a log of completed Pomodoro sessions with timestamps, beyond today's count.
+- **Multiple mission lists**: separate lists for different projects or contexts.
+- **Custom notification sounds**: let users choose or upload their own end-of-session sound instead of the synthesized beep.
+- **Themes**: a light-mode or alternate accent-color option alongside the current dark tomato theme.
+- **Browser notifications**: an optional native notification when a session ends and the tab isn't focused.
