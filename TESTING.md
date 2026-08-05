@@ -11,7 +11,7 @@ The recommended [HTML W3C Validator](https://validator.w3.org) was used to valid
  
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-|  | [index.html](https://github.com/Azizr96/mission-control/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://azizr96.github.io/mission-control/index.html) | ![screenshot](documentation/) |  |
+|  | [index.html](https://github.com/Azizr96/mission-control/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://azizr96.github.io/mission-control/index.html) | ![screenshot](documentation/testing-screenshots/html-validation.png) | Passed tests with no errors |
  
 ### CSS
  
@@ -19,7 +19,7 @@ The recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was 
  
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| css | [style.css](https://github.com/Azizr96/mission-control/blob/main/css/style.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://azizr96.github.io/mission-control) | ![screenshot](documentation/) |  |
+| css | [style.css](https://github.com/Azizr96/mission-control/blob/main/css/style.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://azizr96.github.io/mission-control) | ![screenshot](documentation/testing-screenshots/css-validator-test.png) |  |
  
 ### JavaScript
  
@@ -34,10 +34,10 @@ The recommended [JSHint Validator](https://jshint.com) was used to validate all 
  
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| js | [app.js](https://github.com/Azizr96/mission-control/blob/main/js/app.js) |  | ![screenshot](documentation/) |  |
-| js | [timer.js](https://github.com/Azizr96/mission-control/blob/main/js/timer.js) |  | ![screenshot](documentation/) |  |
-| js | [tasks.js](https://github.com/Azizr96/mission-control/blob/main/js/tasks.js) |  | ![screenshot](documentation/) |  |
-| js | [storage.js](https://github.com/Azizr96/mission-control/blob/main/js/storage.js) |  | ![screenshot](documentation/) |  |
+| js | [script.js](https://github.com/Azizr96/mission-control/blob/main/js/app.js) | [JSHint Validator](https://jshint.com) | ![screenshot](documentation/testing-screenshots/script-js-es-lint-test.png) | The bad constructor warning is due to linter not supporting newer ES features. however the code is correct and uses correct jaavscript coding methodologies.  |
+| js | [timer.js](https://github.com/Azizr96/mission-control/blob/main/js/timer.js) | [JSHint Validator](https://jshint.com) | ![screenshot](documentation/testing-screenshots/timer-js-es-lint-test.png) | Linter does not support ES9 features therefore this error shows, however this does nto effect the quality of the code.  |
+| js | [tasks.js](https://github.com/Azizr96/mission-control/blob/main/js/tasks.js) | [JSHint Validator](https://jshint.com) | ![screenshot](documentation/testing-screenshots/task-js-test.png) |  |
+| js | [storage.js](https://github.com/Azizr96/mission-control/blob/main/js/storage.js) | [JSHint Validator](https://jshint.com) | ![screenshot](documentation/testing-screenshots/storage-js-test.png) |  |
  
 ## Responsiveness
  
@@ -45,16 +45,16 @@ The deployed site was tested at mobile, tablet, and desktop widths using browser
  
 | Page | Mobile | Tablet | Desktop | Notes |
 | --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/) | Works as expected |
-| Instructions modal | ![screenshot](documentation/responsiveness/mobile-modal.png) | ![screenshot](documentation/responsiveness/tablet-modal.png) | ![screenshot](documentation/) | Works as expected |
+| Home | ![screenshot](documentation/responsivness-screenshots/mobile-resp.png) | ![screenshot](documentation/responsivness-screenshots/tablet-resp.png) | ![screenshot](documentation/responsivness-screenshots/desktop-resp.png) | Works as expected |
+| Instructions modal | ![screenshot](documentation/responsivness-screenshots/mobile-ins-resp.png) | ![screenshot](documentation//responsivness-screenshots/tablet-ins-resp.png) | ![screenshot](documentation/responsivness-screenshots/desktop-ins-resp.png) | Works as expected |
  
 ## Browser Compatibility
  
 The deployed site was tested across multiple browsers to check for compatibility issues.
  
-| Page | Chrome | Firefox | Safari | Notes |
-| --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/) | ![screenshot](documentation/) | ![screenshot](documentation/browsers) | Works as expected |
+| Page | Chrome | Firefox | Safari | Edge | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Home | ![screenshot](documentation/browsers/chrome.png) | ![screenshot](documentation/browsers/firefox.png) | ![screenshot](documentation/browsers/safari.png) | ![screenshot](documentation/browsers/edge.png) | Works as expected |
  
 ## Lighthouse Audit
  
@@ -62,26 +62,37 @@ The deployed site was tested using the Lighthouse Audit tool in Chrome DevTools,
  
 | Page | Mobile | Desktop |
 | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
+| Home | ![screenshot](documentation/lighthouse/mobile-lighthouse.png) | ![screenshot](documentation/lighthouse/desktop-lighthouse.png) |
  
+
+## Accesbility test
+
+The deployed site was tested using the [WAVE](https://wave.webaim.org/) web accessbility tester
+
+| Test | Screenshot |  
+| --- | --- |
+| WAVE | ![screenshot](documentation/testing-screenshots/accessbility-test.png) |
+
+
+
 ## Defensive Programming
  
 Defensive programming was manually tested with the below user acceptance testing:
  
-| Page/Feature | Expectation | Test | Result | Screenshot |
-| --- | --- | --- | --- | --- |
-| Timer controls | Start begins the countdown and disables itself while Pause becomes enabled. | Pressed Start from a fresh page load. | Behaved as expected. | ![screenshot](documentation/defensive/timer-start.png) |
-| Timer controls | Pause stops the countdown at the exact remaining time; resuming continues from there, not from the start. | Started the timer, paused partway through, then resumed. | Behaved as expected. | ![screenshot](documentation/defensive/timer-pause.png) |
-| Timer controls | Stop resets the timer to the full duration for the current mode. | Started the timer, let it run, then pressed Stop. | Behaved as expected. | ![screenshot](documentation/defensive/timer-stop.png) |
-| Mode tabs | Switching modes resets the timer to that mode's duration, even mid-session. | Started a Pomodoro session, then clicked Short Break mid-countdown. | Behaved as expected. | ![screenshot](documentation/defensive/mode-switch.png) |
-| Auto-transition | After 4 completed Pomodoros, the next break is a Long Break instead of a Short Break. | Manually completed 4 Pomodoro cycles in sequence. | Behaved as expected. | ![screenshot](documentation/defensive/auto-transition.png) |
-| Mission durations | Invalid input (empty, zero, negative, non-numeric, or over 90) is rejected with an on-screen error. | Tried submitting each type of invalid value in the durations form. | Error message displayed as expected; valid values were accepted and applied. | ![screenshot](documentation/defensive/duration-validation.png) |
-| Add mission | Submitting an empty or whitespace-only mission is rejected with an on-screen error, and nothing is added to the list. | Submitted the mission form with the input empty and with only spaces. | Error message displayed as expected; no empty items were added. | ![screenshot](documentation/defensive/mission-empty.png) |
-| Mission list | Completing, deleting, and marking a mission as current all update the list and Mission Stats correctly, for the first, middle, and last item in the list. | Tested each action against items in each list position. | Behaved as expected in all positions. | ![screenshot](documentation/defensive/mission-crud.png) |
-| Mission list scrolling | Once the list grows past ~5 missions, it scrolls internally instead of expanding the page. | Added 10+ missions and observed the list container. | List scrolled as expected; page layout stayed fixed. | ![screenshot](documentation/defensive/mission-scroll.png) |
-| Persistence | Missions and duration settings survive a full page refresh. | Added missions, changed durations, then refreshed the page. | All data was restored correctly. | ![screenshot](documentation/defensive/persistence.png) |
-| Accessibility | All interactive elements (tabs, buttons, form fields, mission actions) are reachable and operable via keyboard alone, with a visible focus indicator. | Tabbed through the entire page using only the keyboard. | All elements were reachable and clearly focused; no keyboard traps. | ![screenshot](documentation/defensive/keyboard-nav.png) |
-| Instructions modal | The modal opens on click, is dismissible via the close button, the "Got it" button, and the Escape key, and returns focus sensibly afterward. | Opened and closed the modal using each method. | Behaved as expected. | ![screenshot](documentation/defensive/modal.png) |
+| Page/Feature | Expectation | Test | Result | 
+| --- | --- | --- | --- | 
+| Timer controls | Start begins the countdown and disables itself while Pause becomes enabled. | Pressed Start from a fresh page load. | Behaved as expected. | 
+| Timer controls | Pause stops the countdown at the exact remaining time; resuming continues from there, not from the start. | Started the timer, paused partway through, then resumed. | Behaved as expected. | 
+| Timer controls | Stop resets the timer to the full duration for the current mode. | Started the timer, let it run, then pressed Stop. | Behaved as expected. | 
+| Mode tabs | Switching modes resets the timer to that mode's duration, even mid-session. | Started a Pomodoro session, then clicked Short Break mid-countdown. | Behaved as expected. | 
+| Auto-transition | After 4 completed Pomodoros, the next break is a Long Break instead of a Short Break. | Manually completed 4 Pomodoro cycles in sequence. | Behaved as expected. | 
+| Mission durations | Invalid input (empty, zero, negative, non-numeric, or over 90) is rejected with an on-screen error. | Tried submitting each type of invalid value in the durations form. | Error message displayed as expected; valid values were accepted and applied. | 
+| Add mission | Submitting an empty or whitespace-only mission is rejected with an on-screen error, and nothing is added to the list. | Submitted the mission form with the input empty and with only spaces. | Error message displayed as expected; no empty items were added. | 
+| Mission list | Completing, deleting, and marking a mission as current all update the list and Mission Stats correctly, for the first, middle, and last item in the list. | Tested each action against items in each list position. | Behaved as expected in all positions. | 
+| Mission list scrolling | Once the list grows past ~5 missions, it scrolls internally instead of expanding the page. | Added 10+ missions and observed the list container. | List scrolled as expected; page layout stayed fixed. | 
+| Persistence | Missions and duration settings survive a full page refresh. | Added missions, changed durations, then refreshed the page. | All data was restored correctly. | 
+| Accessibility | All interactive elements (tabs, buttons, form fields, mission actions) are reachable and operable via keyboard alone, with a visible focus indicator. | Tabbed through the entire page using only the keyboard. | All elements were reachable and clearly focused; no keyboard traps. | 
+| Instructions modal | The modal opens on click, is dismissible via the close button, the "Got it" button, and the Escape key, and returns focus sensibly afterward. | Opened and closed the modal using each method. | Behaved as expected. | 
  
 ## User Story Testing
  
@@ -125,10 +136,10 @@ Any remaining open issues can be tracked [here](https://www.github.com/Azizr96/m
  
 ### Known Issues
  
-| Issue | Screenshot |
-| --- | --- |
-| Bootstrap's `lg` grid breakpoint switches to the two-column desktop layout at 992px, not exactly 1024px as shown in the original wireframes. This is a deliberate trade-off of using Bootstrap's default grid rather than a custom breakpoint. |  |
-| The project must be served over `http(s)` (e.g. via Live Server or GitHub Pages) rather than opened directly as a local `file://` page, since native ES modules are blocked by CORS from `file://` origins. This is expected browser behavior, not a bug. |  |
+| Issue | 
+| --- | 
+| Bootstrap's `lg` grid breakpoint switches to the two-column desktop layout at 992px, not exactly 1024px as shown in the original wireframes. This is a deliberate trade-off of using Bootstrap's default grid rather than a custom breakpoint. |  
+| The project must be served over `http(s)` (e.g. via Live Server or GitHub Pages) rather than opened directly as a local `file://` page, since native ES modules are blocked by CORS from `file://` origins. This is expected browser behavior, not a bug. |  
  
 > [!IMPORTANT]  
 > There are no remaining bugs that we are aware of, though, even after thorough testing, we cannot rule out the possibility.
