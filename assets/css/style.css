@@ -141,9 +141,7 @@ h2,
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
-.mode-tabs::-webkit-scrollbar {
-  display: none;
-}
+.mode-tabs::-webkit-scrollbar { display: none; }
 .mode-tab {
   color: var(--color-text-secondary);
   border-radius: 999px;
@@ -160,6 +158,7 @@ h2,
   color: #ffffff;
   border-radius: 50px;
 }
+
 
 /*  4. Timer ring — Sarah (Timer core)  */
 .timer-ring-wrap {
@@ -334,6 +333,22 @@ h2,
   }
 }
 
+
+@media (max-width: 450px) {
+  .mode-tabs {
+    justify-content: flex-start;
+    padding: 4px;
+    gap: 3px;
+  }
+
+  .mode-tab {
+    font-size: 0.75rem;
+    padding: 7px 10px;
+
+}
+
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -341,4 +356,5 @@ h2,
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+
 }
