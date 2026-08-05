@@ -181,7 +181,7 @@ All planning, design decisions, implementation, testing, and final code changes 
  
 [GitHub Projects](https://www.github.com/Azizr96/mission-control/projects) was used as an Agile tool. User stories were broken down by epic (Timer, Missions, Persistence, Accessibility) and tracked on a Kanban board, split across four owners.
  
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/screenshots/project-board.png)
  
 ### GitHub Issues
  
