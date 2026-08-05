@@ -67,7 +67,7 @@ The deployed site was tested using the Lighthouse Audit tool in Chrome DevTools,
 
 ## Accesbility test
 
-The deployed site was tested using the [WAVE](https://wave.webaim.org/) web accesbility tester
+The deployed site was tested using the [WAVE](https://wave.webaim.org/) web accessbility tester
 
 | Test | Screenshot |  
 | --- | --- |
