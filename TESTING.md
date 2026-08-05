@@ -52,9 +52,9 @@ The deployed site was tested at mobile, tablet, and desktop widths using browser
  
 The deployed site was tested across multiple browsers to check for compatibility issues.
  
-| Page | Chrome | Firefox | Safari | Notes |
-| --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/) | ![screenshot](documentation/) | ![screenshot](documentation/browsers) | Works as expected |
+| Page | Chrome | Firefox | Safari | Edge | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Home | ![screenshot](documentation/browsers/chrome.png) | ![screenshot](documentation/browsers/firefox.png) | ![screenshot](documentation/browsers/safari.png) | ![screenshot](documentation/browsers/edge.png) | Works as expected |
  
 ## Lighthouse Audit
  
