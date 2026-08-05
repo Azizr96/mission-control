@@ -1,4 +1,6 @@
 # [Mission Control](https://azizr96.github.io/mission-control)
+
+Live Link : [Mission Control](https://azizr96.github.io/mission-control)
  
 A Pomodoro focus timer with an integrated mission (task) list, built as a JavaScript Group Project for the AI Augmented FullStack Bootcamp.
  
@@ -153,7 +155,20 @@ Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https:
 
 ## Tools & Technologies
 
-
+| Tool / Tech | Use |
+| --- | --- |
+| [![badge](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) | Version control (`git add`, `git commit`, `git push`). |
+| [![badge](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) | Code storage, Issues, and Projects for Agile tracking. |
+| [![badge](https://img.shields.io/badge/VSCode-grey?logo=htmx&logoColor=007ACC)](https://code.visualstudio.com) | Local IDE for development. |
+| [![badge](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) | Page structure and semantic markup. |
+| [![badge](https://img.shields.io/badge/CSS-grey?logo=css&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) | Custom theming layered on top of Bootstrap. |
+| [![badge](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) | Timer logic, mission list, persistence, and DOM wiring (ES modules). |
+| [![badge](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) | Grid, forms, buttons, list groups, and the instructions modal. |
+| [![badge](https://img.shields.io/badge/Google_Fonts-grey?logo=googlefonts&logoColor=4285F4)](https://fonts.google.com) | Sora and Inter typefaces. |
+| [![badge](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) | Hosting the deployed site. |
+| [![badge](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) | Wireframing. |
+| [![badge](https://img.shields.io/badge/Claude-grey?logo=claude&logoColor=D97757)](https://claude.ai) | Planning the project structure, generating and reviewing code, WCAG contrast verification, and debugging assistance. |
+| [![badge](https://img.shields.io/badge/Copilot-grey?logo=githubcopilot&logoColor=##000000)](https://github.com/copilot) | Help debug, troubleshoot, and explain things. |
 ## AI Tool Usage
 
 Claude and GitHub Copilot were used as supporting development assistant during the project.  It was primarily used to speed up project structuring, troubleshooting, review potential code improvements, and refine spelling/grammar and documentation.
