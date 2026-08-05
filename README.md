@@ -76,3 +76,30 @@ source: [mission-control amiresponsive](https://ui.dev/amiresponsive?url=https:/
 - **[Colour Scheme](#colour-scheme)** (see below)
 - **[Typography](#typography)** (see below)
 
+
+### Colour Scheme
+ 
+The palette is a dark, near-black background with a tomato-red accent — a nod to "Pomodoro" (Italian for tomato). Every text/background pairing below was checked against the WCAG 2.1 contrast formula rather than chosen by eye.
+ 
+- `#0A0712` page background
+- `#15101F` panel background
+- `#1E1730` raised surfaces (list items, inputs)
+- `#F5F3FA` primary text — 18.1:1 on the page background (AAA)
+- `#A79FC2` secondary/muted text — 8.0:1 on the page background (AAA)
+- `#FF5A44` accent (tomato) — 6.5:1 on the page background (AA), used for links, the progress ring, and small accents
+- `#C93A2A` button fill — white text on this reaches 5.1:1 (AA)
+- `#34D399` success (completed missions) — 10.4:1 on the page background (AAA)
+![screenshot](documentation/screenshots/color-pallete.png)
+ 
+### Typography
+ 
+- [Sora](https://fonts.google.com/specimen/Sora) (Google Fonts) is used for headings and the timer digits.
+- [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts) is used for all body and UI text.
+- [Fav icon](https://favicon.io/)(Fav icon) is used for the window tab icon.
+
+## Wireframes
+ 
+Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https://balsamiq.com/wireframes).
+ 
+ ![screenshot](documentation/screenshots/wireframes.png) 
+ 
