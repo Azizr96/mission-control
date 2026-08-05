@@ -149,3 +149,38 @@ Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https:
 - **Custom notification sounds**: let users choose or upload their own end-of-session sound instead of the synthesized beep.
 - **Themes**: a light-mode or alternate accent-color option alongside the current dark tomato theme.
 - **Browser notifications**: an optional native notification when a session ends and the tab isn't focused.
+
+
+## Tools & Technologies
+
+
+## Agile Development Process
+
+### GitHub Projects
+ 
+[GitHub Projects](https://www.github.com/Azizr96/mission-control/projects) was used as an Agile tool. User stories were broken down by epic (Timer, Missions, Persistence, Accessibility) and tracked on a Kanban board, split across four owners.
+ 
+![screenshot](documentation/gh-projects.png)
+ 
+### GitHub Issues
+ 
+[GitHub Issues](https://www.github.com/Azizr96/mission-control/issues) was used to track user stories, tasks, and bugs individually.
+ 
+| Link | 
+| --- | 
+| [![GitHub issues](https://img.shields.io/github/issues-search/Azizr96/mission-control?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://www.github.com/Azizr96/mission-control/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) 
+| [![GitHub closed issues](https://img.shields.io/github/issues-search/Azizr96/mission-control?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://www.github.com/Azizr96/mission-control/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) 
+ 
+### MoSCoW Prioritization
+ 
+User stories were prioritized using MoSCoW and split across the team by feature area:
+ 
+- **Must have**: Timer core (start/pause/reset/mode switching/auto-transition), Mission CRUD, basic persistence.
+- **Should have**: Custom durations, settings persistence, accessibility pass, responsive layout.
+- **Could have**: Notification sound, daily session stats.
+- **Required throughout**: validation, deployment, version control, documentation, code organization, AI-usage reflection.
+
+## Testing
+ 
+> [!NOTE]  
+> For all testing, please refer to the [TESTING.md](TESTING.md) file.
