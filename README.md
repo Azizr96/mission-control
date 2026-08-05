@@ -154,6 +154,12 @@ Wireframes were designed for mobile, tablet, and desktop using [Balsamiq](https:
 ## Tools & Technologies
 
 
+## AI Tool Usage
+
+Claude and GitHub Copilot were used as supporting development assistant during the project.  It was primarily used to speed up project structuring, troubleshooting, review potential code improvements, and refine spelling/grammar and documentation.
+
+All planning, design decisions, implementation, testing, and final code changes were completed and validated by the project authors. AI suggestions were reviewed critically and applied only where they aligned with project requirements and best practices.
+
 ## Agile Development Process
 
 ### GitHub Projects
@@ -211,3 +217,41 @@ This project uses native ES modules (`<script type="module">`), which browsers b
 ### Local vs. Deployment
  
 There are no known functional differences between the local version and the deployed version.
+
+## Credits
+ 
+### Content
+ 
+| Source | Notes |
+| --- | --- |
+| [Claude](https://claude.ai) | Code recomendations, and debugging throughout development. |
+| [MDN Web Docs](https://developer.mozilla.org) | Reference for JavaScript, Web Audio API, and localStorage. |
+| [GitHub Copilot](https://github.com/features/copilot) | In IDE enviroment development assistance |
+| [Mark down builder](https://markdown.2bn.dev/) | Used to develop Markdown file structure |
+| [Balsamic](https://balsamiq.com/) | Used for Wireframes |
+
+
+
+ 
+### Media
+
+| Source | Notes |
+| --- | --- |
+| [Gemini Ai](https://gemini.google.com/) | Creation of logo |
+| [Am i responsive](https://fireship.dev/amiresponsive) | Creation of multiple responsive image  |
+
+ ### Frameworks, Icons and Fonts
+
+| Source | Notes |
+| --- | --- |
+| [Google Fonts](https://fonts.google.com) | Sora and Inter typefaces. |
+| [Fav Icon](https://favicon.io/) | For web tab icon |
+| [Bootstrap Docs](https://getbootstrap.com/docs) | Reference for grid, components, and utility classes. |
+
+ 
+### Acknowledgements
+ 
+- We would like to thank Tim at Code Institute, Tim Nelson for valuable advice on developing the project and providing the markdown builder web app.
+<!-- Add mentor name/GitHub link if applicable -->
+- We would like to thank Marko at Code Institute, for providing advice on Agile methodologies on planning the project and providing resurces for Wireframes and valuable websites to aid with testing of the projects.
+- Thanks to each team member  for owning their features end to end and reviewing each other's work.
