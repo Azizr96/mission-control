@@ -98,19 +98,19 @@ Defensive programming was manually tested with the below user acceptance testing
  
 | Target | Expectation | Outcome | Screenshot |
 | --- | --- | --- | --- |
-| As a user | I want to start a focus timer | so that I can begin a work session. | ![screenshot](documentation/user-stories/user-1.png.png) |
-| As a user | I want to pause and resume the timer | so that I can handle interruptions without losing progress. | ![screenshot](documentation/user-stories/user-2.png.png) |
-| As a user | I want to reset the current session | so that I can start over if I get distracted. | ![screenshot](documentation/user-stories/user-3.png.png) |
-| As a user | I want to switch between Focus, Short Break, and Long Break | so that I can follow the Pomodoro structure. | ![screenshot](documentation/user-stories/user-4.png.png) |
-| As a user | I want the timer to automatically move to the next session type | so that I don't have to manually switch every time. | ![screenshot](documentation/user-stories/user-5.png.png) |
-| As a user | I want to set my own durations for focus and break sessions | so that I can tailor the timer to my own workflow. | ![screenshot](documentation/user-stories/user-6.png.png) |
-| As a user | I want to add a task to my list | so that I can track what I'm working on. | ![screenshot](documentation/user-stories/user-7.png.png) |
-| As a user | I want to check off a task when it's done | so that I can see my progress. | ![screenshot](documentation/user-stories/user-8.png.png) |
-| As a user | I want to remove a task from my list | so that I can clean up items I no longer need. | ![screenshot](documentation/user-stories/user-9.png.png) |
-| As a user | I want to mark which task I'm actively working on | so that it's clear what my current focus session is for. | ![screenshot](documentation/user-stories/user-10.png.png)|
-| As a user | I want my task list to still be there if I refresh the page | so that I don't lose my list. | ![screenshot](documentation/user-stories/user-11.png.png) |
-| As a user relying on assistive technology | I want the page to use semantic HTML and pass accessibility checks | so that I can navigate and use the app regardless of ability. | ![screenshot](documentation/user-stories/user-12.png.png) |
-| As a user on any device | I want the layout to adapt to my screen size | so that the app is usable on mobile, tablet, and desktop. | ![screenshot](documentation/user-stories/responsive.png.png) |
+| As a user | I want to start a focus timer | so that I can begin a work session. | ![screenshot](documentation/user-stories/user-1.png) |
+| As a user | I want to pause and resume the timer | so that I can handle interruptions without losing progress. | ![screenshot](documentation/user-stories/user-2.png) |
+| As a user | I want to reset the current session | so that I can start over if I get distracted. | ![screenshot](documentation/user-stories/user-3.png) |
+| As a user | I want to switch between Focus, Short Break, and Long Break | so that I can follow the Pomodoro structure. | ![screenshot](documentation/user-stories/user-4.png) |
+| As a user | I want the timer to automatically move to the next session type | so that I don't have to manually switch every time. | ![screenshot](documentation/user-stories/user-5.png) |
+| As a user | I want to set my own durations for focus and break sessions | so that I can tailor the timer to my own workflow. | ![screenshot](documentation/user-stories/user-6.png) |
+| As a user | I want to add a task to my list | so that I can track what I'm working on. | ![screenshot](documentation/user-stories/user-7.png) |
+| As a user | I want to check off a task when it's done | so that I can see my progress. | ![screenshot](documentation/user-stories/user-8.png) |
+| As a user | I want to remove a task from my list | so that I can clean up items I no longer need. | ![screenshot](documentation/user-stories/user-9.png) |
+| As a user | I want to mark which task I'm actively working on | so that it's clear what my current focus session is for. | ![screenshot](documentation/user-stories/user-10.png)|
+| As a user | I want my task list to still be there if I refresh the page | so that I don't lose my list. | ![screenshot](documentation/user-stories/user-11.png) |
+| As a user relying on assistive technology | I want the page to use semantic HTML and pass accessibility checks | so that I can navigate and use the app regardless of ability. | ![screenshot](documentation/user-stories/user-12.png) |
+| As a user on any device | I want the layout to adapt to my screen size | so that the app is usable on mobile, tablet, and desktop. | ![screenshot](documentation/user-stories/responsive.png) |
  
 ## Bugs
  
