@@ -8,12 +8,12 @@
 - [x] Initial commit with base file structure (`index.html`, `css/`, `js/`, `documentation/`)
 - [x] Scaffold semantic HTML structure (header, nav, main sections, footer)
 - [x] Set up external CSS file with base styling and layout
-- [ ] Set up Bootstrap main skeleton code for all files and link them
+- [x] Set up Bootstrap main skeleton code for all files and link them
 - [x] Create README template on ('https://markdown.2bn.dev/')
 - [x] Add readme file and readme template
-- [ ] Add wireframes to REDME file and snapshots to ('documentation/images')
-- [ ] Add user stories to README file and short description of the project, it's needs and benefits.
-- [ ] Push Day 1 work, confirm nothing is broken on `main`
+- [x] Add wireframes to REDME file and snapshots to ('documentation/images')
+- [x] Add user stories to README file and short description of the project, it's needs and benefits.
+- [x] Push Day 1 work, confirm nothing is broken on `main`
 
 ## Day 2 — Implementation
 
@@ -23,27 +23,27 @@
 - [x] Implement session history log and live stats
 - [ ] Implement optional Web Audio completion cue with visible toggle
 - [ ] Implement accessible status announcements (aria-live, phase changes only)
-- [ ] Manual test: desktop Chrome
-- [ ] Manual test: desktop Firefox or Safari
-- [ ] Manual test: mobile viewport (real device or dev tools)
+- [x] Manual test: desktop Chrome
+- [x] Manual test: desktop Firefox or Safari
+- [x] Manual test: mobile viewport (real device or dev tools)
 - [ ] Manual test: keyboard-only navigation (tab through entire page)
 - [ ] Manual test: screen reader pass on status announcements and task list
 - [ ] Code review: check indentation, naming, comments
-- [ ] Commit + push, resolve any merge conflicts
+- [x] Commit + push, resolve any merge conflicts
 
 ## Day 3 — Polish, validation, deployment
 
-- [ ] Run HTML through [W3C Validator](https://validator.w3.org/) — fix all errors
-- [ ] Run CSS through [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) — fix all errors
-- [ ] Run JS through a linter (e.g. `npx eslint js/script.js`) — fix all significant issues
-- [ ] Confirm zero console errors: empty task submit, invalid session length, skip-before-start, rapid pause/resume
-- [ ] Remove all commented-out / dead code
-- [ ] Take screenshots of key states (focus running, break running, task list, history) and add to `docs/`
-- [ ] Update `README.md` screenshots table with real images + captions
-- [ ] Write/finalize AI-use reflection in `README.md` in your own words
-- [ ] Deploy to GitHub Pages (or chosen host)
-- [ ] Verify deployed version matches dev version exactly — full focus→break cycle, tasks, history
-- [ ] Update README with live demo + repo links
+- [x] Run HTML through [W3C Validator](https://validator.w3.org/) — fix all errors
+- [x] Run CSS through [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) — fix all errors
+- [x] Run JS through a linter (e.g. `npx eslint js/script.js`) — fix all significant issues
+- [x] Confirm zero console errors: empty task submit, invalid session length, skip-before-start, rapid pause/resume
+- [x] Remove all commented-out / dead code
+- [x] Take screenshots of key states (focus running, break running, task list, history) and add to `docs/`
+- [x] Update `README.md` screenshots table with real images + captions
+- [x] Write/finalize AI-use reflection in `README.md` in your own words
+- [x] Deploy to GitHub Pages (or chosen host)
+- [x] Verify deployed version matches dev version exactly — full focus→break cycle, tasks, history
+- [x] Update README with live demo + repo links
 - [ ] Final commit with clear message; confirm commit history is clean and descriptive
 
 ---
