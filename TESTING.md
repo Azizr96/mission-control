@@ -132,7 +132,7 @@ A few notable bugs found and fixed during AI-assisted development, worth documen
  
 Any remaining open issues can be tracked [here](https://www.github.com/Azizr96/mission-control/issues?q=is%3Aissue+is%3Aopen+label%3Abug).
  
-![screenshot](documentation/bugs/gh-issues-open.png)
+
  
 ### Known Issues
  
