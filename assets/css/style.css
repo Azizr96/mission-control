@@ -415,3 +415,36 @@ h2,
   }
 
 }
+
+/*  9. Footer — Davy (accessibility/usability)  */
+.app-footer {
+  border-top: 1px solid var(--color-border);
+}
+
+.app-footer__built-by {
+  line-height: 2;
+}
+
+.app-footer__link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+}
+.app-footer__link:hover,
+.app-footer__link:focus-visible {
+  color: var(--color-accent);
+}
+.app-footer__link--inline {
+  text-decoration: underline;
+}
+
+.app-footer__gh-icon {
+  flex-shrink: 0;
+}
+.app-footer__role {
+  color: var(--color-text-secondary);
+  font-size: 0.8em;
+}
