@@ -2,7 +2,7 @@
 
 Live Link : [Mission Control](https://azizr96.github.io/mission-control)
  
-A Pomodoro focus timer with an integrated mission (task) list, built as a JavaScript Group Project for the AI Augmented FullStack Bootcamp.
+A Pomodoro focus timer with an integrated mission (task) list, built as a Hackathon Group Project for the AI Augmented FullStack Bootcamp.
  
 Developers: 
 Rauhan Aziz ([Azizr96](https://www.github.com/Azizr96)),
